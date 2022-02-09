@@ -1,0 +1,13 @@
+inputs:
+  data:
+    dataset: azureml:songs:1
+    mode: download 
+experiment_name: mldotnet-training
+code:
+  local_path: .
+command: mlnet regression --dataset {inputs.data}/song_data.csv --label-col song_popularity --output outputs --log-file-path outputs/logs
+compute: azureml:BlogTest1107-QIN
+environment:
+  build:
+    local_path: .
+    dockerfile_path: Dockerfile
