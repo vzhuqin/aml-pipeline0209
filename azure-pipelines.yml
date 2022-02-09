@@ -5,8 +5,8 @@
 
 variables:
   ml-ws-connection: 'aml-ws' # Workspace Service Connection name
-  ml-ws: 'FullTestPas' # AML Workspace name
-  ml-rg: 'FullTestPas'  # AML resource Group name
+  ml-ws: 'FullTestPass' # AML Workspace name
+  ml-rg: 'FullTestPass'  # AML resource Group name
 
 trigger:
 - main
